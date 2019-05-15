@@ -1,0 +1,53 @@
+article.tweet {
+  opacity: 0.75;
+  background-color: #fcfcfc;
+  width: 382px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #bbb;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+
+article .header {
+  background-color: #e5e5e5;
+  height: 60px;
+
+  vertical-align: center;
+}
+
+article .logo {
+  float: left;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+article .name {
+  float: left;
+  display: inline;
+  margin: 5px 5px 0;
+  vertical-align: top;
+  font-size: 28px;
+}
+
+article .user {
+  float: right;
+  margin: 15px 5px;
+}
+
+article .content {
+  margin: 15px 5px 15px 10px;
+}
+
+article hr {
+  color: #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+article .footer {
+  margin: 5px;
+
+}
+article:hover {
+  opacity: 1;
+}
