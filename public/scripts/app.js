@@ -51,11 +51,20 @@ $(".tweetForm").submit(function (event) {
     url = $form.attr("action");
     $.post(url, {text: tweet}).done(data => {
       $("textarea").val("").trigger('keyup');
+      reloadTweets();
     });
-    reloadTweets();
     } else {
       alert("Tweet can not exceed 140 characters.");
     }
+});
+
+$(".composebutton").click(function () {
+  $(".new-tweet").slideToggle("slow", function() {
+    if ($(".new-tweet").is(":visible")) {
+      $("textarea[name='text']").focus();
+    }
+  });
+
 });
 
 reloadTweets();

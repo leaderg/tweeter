@@ -28,8 +28,12 @@ body {
  main {
   z-index: 0;
   position: relative;
-  top: 100px;
+  top: 80px;
   width: 450px;
   margin: 0 auto;
   background-color: white;
+ }
+
+ .tweetbox {
+  padding-top: 10px;
  }

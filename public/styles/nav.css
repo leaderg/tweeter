@@ -14,10 +14,38 @@
 }
 #nav-bar .header {
   color: #e8fdff;
-  float:left;
+  float: left;
   line-height: 80px;
-  vertical-align: center;
   font-weight: 600;
   padding-left: 10px;
   font-size: 36px;
+}
+
+#nav-bar .composebutton {
+  float: right;
+  background-color: #e5e5e5;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #bbb;
+  border-radius: 8px;
+  width: 125px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  top: 20%;
+}
+
+#nav-bar .composebutton:hover {
+  background-color: #bbb;
+}
+
+#nav-bar .compose {
+  float: right;
+  position: relative;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+#nav-bar .composeImg {
+  margin: 6px 0 12px 9px;
 }

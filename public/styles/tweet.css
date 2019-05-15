@@ -13,6 +13,7 @@ article .header {
   background-color: #e5e5e5;
   height: 60px;
 
+
   vertical-align: center;
 }
 
@@ -27,7 +28,9 @@ article .name {
   display: inline;
   margin: 5px 5px 0;
   vertical-align: top;
+  line-height: 25px;
   font-size: 28px;
+  max-width: 210px;
 }
 
 article .user {

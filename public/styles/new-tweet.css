@@ -4,7 +4,10 @@
   border-width: 2px;
   border-color: #ddd;
   border-radius: 8px;
- margin: 0 2em;
+  margin: 0 2em;
+  position: relative;
+  top: 10px;
+  bottom: 10px;
 }
 
 .new-tweet h2 {
