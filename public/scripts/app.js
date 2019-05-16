@@ -26,7 +26,7 @@ function createTweetElement(tweetObj) {
   let $footer = $("<footer>").addClass("footer").text(timestamp);
 
   $tweet = $tweet.append($div).append($content).append($hr).append($footer);
-
+  console.log($tweet);
   return $tweet;
 }
 
@@ -54,7 +54,7 @@ $(".tweetForm").submit(function (event) {
       reloadTweets();
     });
     } else {
-      alert("Tweet can not exceed 140 characters.");
+      $("#error").show();
     }
 });
 
@@ -64,7 +64,12 @@ $(".composebutton").click(function () {
       $("textarea[name='text']").focus();
     }
   });
+});
 
+// $("#error").hide();
+
+$(".error-ok").click(function() {
+  $("#error").hide();
 });
 
 reloadTweets();
