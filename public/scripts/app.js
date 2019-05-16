@@ -66,8 +66,6 @@ $(".composebutton").click(function () {
   });
 });
 
-// $("#error").hide();
-
 $(".error-ok").click(function() {
   $("#error").hide();
 });
@@ -75,3 +73,5 @@ $(".error-ok").click(function() {
 reloadTweets();
 
 });
+
+
