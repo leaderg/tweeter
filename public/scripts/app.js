@@ -6,6 +6,8 @@
 
 $(document).ready(function() {
 
+$(".new-tweet").hide();
+
 function daysAgo(input) {
   input = Number(input);
   const currentTime = new Date();
