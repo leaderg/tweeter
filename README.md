@@ -15,3 +15,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Mongo db: 2.2.36
+- body-parser: 1.15.2
+- chance: 1.0.2
+- md5: 2.1.0
+
+## The Essential Framework
+
+The app was a project to learn front end design and to utilize Jquery to communicate with the front end and back end servers. The back end is comprised of a mongoDB database that allows for creation and persistence of tweets. There are some helper functions that automatically create users. It is a simple application.
