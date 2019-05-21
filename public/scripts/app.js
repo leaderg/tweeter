@@ -8,6 +8,7 @@ $(document).ready(function() {
 
 $(".new-tweet").hide();
 
+// helperfunction to decode timecode.
 function daysAgo(input) {
   input = Number(input);
   const currentTime = new Date();
@@ -21,6 +22,7 @@ function daysAgo(input) {
   }
 }
 
+// Creates a new tweet element with Jquery using data from source database.
 function createTweetElement(tweetObj) {
 
   let avatar = tweetObj.user.avatars.small;
@@ -45,12 +47,14 @@ function createTweetElement(tweetObj) {
   return $tweet;
 }
 
+//renders tweets into main page.
 function renderTweets(tweetDb) {
   for(let tweet in tweetDb) {
     $(".tweetbox").append(createTweetElement(tweetDb[tweet]));
   }
 }
 
+//forces a refresh to update tweets on main page.
 function reloadTweets() {
   $(".tweetbox").empty();
   $.getJSON("/tweets", function(data) {
@@ -58,6 +62,7 @@ function reloadTweets() {
   });
 }
 
+//Form handling with Jquery, shows error if improper input, and sends data to database otherwise.
 $(".tweetForm").submit(function (event) {
   event.preventDefault();
   if ($('textarea').val().length > 140) {
@@ -77,6 +82,7 @@ $(".tweetForm").submit(function (event) {
     }
 });
 
+//Hides and shows new tweet form using nav button.
 $(".composebutton").click(function () {
   $(".new-tweet").slideToggle("slow", function() {
     if ($(".new-tweet").is(":visible")) {
@@ -85,6 +91,7 @@ $(".composebutton").click(function () {
   });
 });
 
+//Hides error message.
 $(".error-ok").click(function() {
   $("#error").hide();
 });
